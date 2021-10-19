@@ -1,0 +1,17 @@
+﻿@page
+@model secureApp.Pages.securePageModel
+@{
+}
+Hello - this is only for authorized uesrs
+
+
+<form method="post">
+    <input type="text" id="roleName" name="roleName" />
+    <button type="submit" asp-page-handler="NewRole">Create Role</button>
+</form>
+
+
+<form method="post">
+    <input type="text" id="userName" name="userName" />
+    <button type="submit" asp-page-handler="AddToAdmin">Add to Admin Role</button>
+</form>
